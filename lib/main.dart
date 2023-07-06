@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ui_design/screens/additional_information.dart';
-import 'package:ui_design/screens/dukaan_premium.dart';
+import 'package:ui_design/screens/catalogue/catalogue_page.dart';
+// import 'package:ui_design/screens/dukaan_premium.dart';
 import 'package:ui_design/screens/manage_store.dart';
 
 import 'package:ui_design/screens/order_page.dart';
@@ -34,12 +35,13 @@ class BottomTabBar extends StatefulWidget {
 }
 
 class _BottomTabBarState extends State<BottomTabBar> {
-  int _index = 0;
+  int _index = 2;
 
   final _pages = [
     const Payments(),
     const OrderPage(),
-    const DukanPremium(),
+    // const DukanPremium(),
+    CataloguePage(),
     const ManageStore(),
     const AdditionalInformation(),
   ];
