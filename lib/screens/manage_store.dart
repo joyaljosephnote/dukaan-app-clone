@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_design/screens/payments.dart';
 
@@ -6,6 +5,9 @@ class ManageStore extends StatelessWidget {
   // ignore: constant_identifier_names
   static const IconData campaign_outlined =
       IconData(0xef27, fontFamily: 'MaterialIcons');
+  // ignore: constant_identifier_names
+  static const IconData center_focus_strong_rounded =
+      IconData(0xf627, fontFamily: 'MaterialIcons');
   const ManageStore({super.key});
 
   @override
@@ -231,7 +233,7 @@ class ManageStore extends StatelessWidget {
                       height: 40,
                       alignment: Alignment.center,
                       child: const Icon(
-                        Icons.qr_code_scanner_outlined,
+                        Icons.center_focus_strong,
                         size: 25,
                         color: Colors.white,
                       ),
@@ -307,20 +309,48 @@ class ManageStore extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(15, 15, 0, 8),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 212, 27, 175),
-                        borderRadius: BorderRadius.circular(6),
-                      ),
-                      width: 40,
-                      height: 40,
-                      alignment: Alignment.center,
-                      child: const Icon(
-                        Icons.notes_outlined,
-                        size: 30,
-                        color: Colors.white,
-                      ),
+                    padding: const EdgeInsets.fromLTRB(15, 0, 0, 8),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 212, 27, 175),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            width: 40,
+                            height: 40,
+                            alignment: Alignment.center,
+                            child: const Icon(
+                              Icons.notes_outlined,
+                              size: 30,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(2),
+                              color: Colors.green,
+                            ),
+                            width: 40,
+                            height: 20,
+                            child: const Align(
+                              child: Text(
+                                'NEW',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const Padding(
