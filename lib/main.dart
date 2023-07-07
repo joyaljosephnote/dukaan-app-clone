@@ -1,13 +1,11 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
-import 'package:ui_design/screens/additional_information.dart';
+import 'package:ui_design/screens/Account/account_page.dart';
 import 'package:ui_design/screens/catalogue/catalogue_page.dart';
-// import 'package:ui_design/screens/dukaan_premium.dart';
+import 'package:ui_design/screens/dukaan_premium.dart';
 import 'package:ui_design/screens/manage_store.dart';
-
 import 'package:ui_design/screens/order_page.dart';
-import 'package:ui_design/screens/payments.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,12 +36,11 @@ class _BottomTabBarState extends State<BottomTabBar> {
   int _index = 2;
 
   final _pages = [
-    const Payments(),
+    const DukanPremium(),
     const OrderPage(),
-    // const DukanPremium(),
-    CataloguePage(),
+    const CataloguePage(),
     const ManageStore(),
-    const AdditionalInformation(),
+    const AccountPage(),
   ];
 
   @override
