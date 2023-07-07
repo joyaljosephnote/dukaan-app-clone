@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_design/screens/account/account_page.dart';
 import 'package:ui_design/screens/catalogue/catalogue_page.dart';
-import 'package:ui_design/screens/dukaan_premium.dart';
+import 'package:ui_design/screens/home/home_page.dart';
 import 'package:ui_design/screens/manage_store.dart';
 import 'package:ui_design/screens/order/order_page.dart';
 
@@ -36,7 +36,7 @@ class _BottomTabBarState extends State<BottomTabBar> {
   int _index = 2;
 
   final _pages = [
-    const DukanPremium(),
+    const HomePage(),
     const OrderPage(),
     const CataloguePage(),
     const ManageStore(),
