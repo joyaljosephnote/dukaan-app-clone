@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_design/screens/catalogue/products_page.dart';
+import 'package:ui_design/screens/catalogue/categories/categories_page.dart';
+import 'package:ui_design/screens/catalogue/products/products_page.dart';
 
 final GlobalKey<NavigatorState> _navKey = GlobalKey<NavigatorState>();
 
@@ -41,6 +42,7 @@ class _CataloguePageState extends State<CataloguePage>
         centerTitle: true,
         bottom: TabBar(
           controller: _tabController,
+          labelStyle: const TextStyle(fontSize: 18),
           tabs: const [
             Tab(
               child: Text('Products'),
@@ -58,7 +60,7 @@ class _CataloguePageState extends State<CataloguePage>
             controller: _tabController,
             children: const [
               ProductsPage(),
-              CataloguePage(),
+              CategoriesPage(),
             ],
           ),
         ),
