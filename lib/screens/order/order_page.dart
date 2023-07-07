@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_design/screens/account/additional_information.dart';
+import 'package:ui_design/screens/order/order_details.dart';
 
-class AccountPage extends StatelessWidget {
-  const AccountPage({super.key});
+class OrderPage extends StatelessWidget {
+  const OrderPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class AccountPage extends StatelessWidget {
         backgroundColor: Colors.blue[800],
         title: Title(
           color: Colors.white,
-          child: const Text('Account'),
+          child: const Text('Orders'),
         ),
         centerTitle: true,
       ),
@@ -44,9 +44,9 @@ class AccountPage extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const AdditionalInformation()));
+                      builder: (context) => const OrderDetails()));
             },
-            child: const Text('Additional Information'),
+            child: const Text('Order Details'),
           ),
         ),
       ),

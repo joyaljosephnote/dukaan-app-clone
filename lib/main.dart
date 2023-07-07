@@ -1,11 +1,11 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
-import 'package:ui_design/screens/Account/account_page.dart';
+import 'package:ui_design/screens/account/account_page.dart';
 import 'package:ui_design/screens/catalogue/catalogue_page.dart';
 import 'package:ui_design/screens/dukaan_premium.dart';
 import 'package:ui_design/screens/manage_store.dart';
-import 'package:ui_design/screens/order_page.dart';
+import 'package:ui_design/screens/order/order_page.dart';
 
 void main() {
   runApp(const MyApp());
