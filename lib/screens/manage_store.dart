@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_design/screens/payments.dart';
+import 'package:ui_design/screens/payments/payments.dart';
 
 class ManageStore extends StatelessWidget {
   // ignore: constant_identifier_names
